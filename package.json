@@ -2,7 +2,10 @@
   "name": "@rajasekhar911/librespeed-speedtest",
   "version": "1.0.0",
   "description": "LibreSpeed - A Free and Open Source speed test that you can host on your server(s)",
-  "main": "speedtest.js",
+  "main": "speedtest.web.ts",
+  "react-native": "SpeedTest.native.ts",
+  "browser": "SpeedTest.web.ts",
+  "types": "index.ts",
   "scripts": {
     "test": "echo \"No automated tests configured yet\" && exit 0",
     "lint": "eslint speedtest.js speedtest_worker.js",
@@ -36,13 +39,18 @@
     "url": "https://github.com/rajasekhar911/speedtest/issues"
   },
   "homepage": "https://github.com/rajasekhar911/speedtest#readme",
+  "dependencies": {
+    "axios": "0.21.4"
+  },
   "devDependencies": {
     "eslint": "^8.57.0",
     "prettier": "^3.1.1"
   },
   "files": [
-    "speedtest.js",
-    "speedtest_worker.js",
+    "index.ts",
+    "SpeedTest.native.ts",
+    "SpeedTest.web.ts",
+    "SpeedTest.types.ts",
     "index.html",
     "favicon.ico",
     "backend/",
