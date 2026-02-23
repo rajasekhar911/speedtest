@@ -1,6 +1,6 @@
 {
   "name": "@rajasekhar911/librespeed-speedtest",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "LibreSpeed - A Free and Open Source speed test that you can host on your server(s)",
   "main": "speedtest.web.ts",
   "react-native": "SpeedTest.native.ts",
